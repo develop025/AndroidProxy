@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         wv = findViewById(R.id.webView)
 
-//        setProxy("103.152.5.70", 8080)
+        setProxy("103.152.5.70", 8080)
 
         wv.settings.apply {
             javaScriptEnabled = true
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         wv.webViewClient = WebViewClientCookieSupport(this)
 
-        wv.loadUrl("https://www.myip.com")
+//        wv.loadUrl("https://www.myip.com")
     }
 
     @SuppressLint("PrivateApi")
